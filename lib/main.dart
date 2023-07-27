@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_app_1/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,8 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.green),
+        primarySwatch: Colors.red,
         useMaterial3: true,
       ),
       home: const LoginPage(),
@@ -54,7 +56,13 @@ class LoginPage extends StatelessWidget {
             ),
             const SizedBox(height: 20.0),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (BuildContext context){
+                  return const HomePage();
+                })
+                );
+              },
               style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.white,
                   foregroundColor: Colors.red,
