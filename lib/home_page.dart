@@ -70,7 +70,7 @@ class HomePage extends StatelessWidget {
                 BoxShadow(
                   color: Colors.black12,
                   spreadRadius: 2,
-                  blurRadius: 2,
+                  blurRadius: 3,
                   offset: Offset(2, 2),
                 ),
               ],
