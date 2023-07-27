@@ -9,121 +9,123 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
       ),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(
-              horizontal: 10.00,
-              vertical: 5.00,
-            ),
-            child: Wrap(
-              spacing: 10,
-              children: [
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    shape: const StadiumBorder(),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 10.00,
+                vertical: 5.00,
+              ),
+              child: Wrap(
+                spacing: 10,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      shape: const StadiumBorder(),
+                    ),
+                    child: const Text("Money"),
                   ),
-                  child: const Text("Money"),
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    shape: const StadiumBorder(),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      shape: const StadiumBorder(),
+                    ),
+                    child: const Text("Bitcoin"),
                   ),
-                  child: const Text("Bitcoin"),
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    shape: const StadiumBorder(),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      shape: const StadiumBorder(),
+                    ),
+                    child: const Text("Stock Market"),
                   ),
-                  child: const Text("Stock Market"),
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    shape: const StadiumBorder(),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      shape: const StadiumBorder(),
+                    ),
+                    child: const Text("House Market"),
                   ),
-                  child: const Text("House Market"),
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    shape: const StadiumBorder(),
-                  ),
-                  child: const Text("Diamond Hands"),
-                )
-              ],
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      shape: const StadiumBorder(),
+                    ),
+                    child: const Text("Diamond Hands"),
+                  )
+                ],
+              ),
             ),
-          ),
-          Container(
-            width: double.infinity,
-            margin: const EdgeInsets.symmetric(
-              horizontal: 10.00,
-              vertical: 5.00,
-            ),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(15),
-              boxShadow: const [
-                BoxShadow(
-                  color: Colors.black12,
-                  spreadRadius: 2,
-                  blurRadius: 3,
-                  offset: Offset(2, 2),
-                ),
-              ],
-            ),
-            child: Column(
-              children: [
-                Image.asset(
-                  "images/bitcoin.png",
-                  width: 300,
-                  height: 300,
-                ),
-                const ListTile(
-                    title: Text('How to get rich'),
-                    trailing: Icon(
-                      Icons.arrow_forward_ios_rounded,
-                    ))
-              ],
-            ),
-          ),
-       const  SizedBox(height: 30.00,),
-          Container(
-            width: double.infinity,
+            Container(
+              width: double.infinity,
               margin: const EdgeInsets.symmetric(
-              horizontal: 10.00,
-              vertical: 5.00,
+                horizontal: 10.00,
+                vertical: 5.00,
               ),
               decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(15),
-              boxShadow: const [
-                BoxShadow(
-                  color: Colors.black12,
-                  spreadRadius: 2,
-                  blurRadius: 3,
-                  offset: Offset(2, 2),
-                ),
-              ],
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(15),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Colors.black12,
+                    spreadRadius: 2,
+                    blurRadius: 3,
+                    offset: Offset(2, 2),
+                  ),
+                ],
+              ),
+              child: Column(
+                children: [
+                  Image.asset(
+                    "images/bitcoin.png",
+                    width: 300,
+                    height: 300,
+                  ),
+                  const ListTile(
+                      title: Text('How to get rich'),
+                      trailing: Icon(
+                        Icons.arrow_forward_ios_rounded,
+                      ))
+                ],
+              ),
             ),
-            child: Column(
-              children: [
-                Image.asset(
-                  'images/rocketride.png',
-                  width: 300,
-                  height: 300,
+         const  SizedBox(height: 30.00,),
+            Container(
+              width: double.infinity,
+                margin: const EdgeInsets.symmetric(
+                horizontal: 10.00,
+                vertical: 5.00,
                 ),
-                const ListTile(
-                  title: Text("How to make 10k/month"),
-                  trailing: Icon(Icons.arrow_forward_ios_rounded),
-                )
-              ],
-            ),
-          )
-        ],
+                decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(15),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Colors.black12,
+                    spreadRadius: 2,
+                    blurRadius: 3,
+                    offset: Offset(2, 2),
+                  ),
+                ],
+              ),
+              child: Column(
+                children: [
+                  Image.asset(
+                    'images/rocketride.png',
+                    width: 300,
+                    height: 300,
+                  ),
+                  const ListTile(
+                    title: Text("How to make 10k/month"),
+                    trailing: Icon(Icons.arrow_forward_ios_rounded),
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
