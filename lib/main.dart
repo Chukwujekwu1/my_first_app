@@ -43,7 +43,7 @@ class LoginPage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-         const   Text(
+            const Text(
               'To Mapp Blog',
               style: TextStyle(
                 color: Colors.white70,
@@ -51,9 +51,18 @@ class LoginPage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-          const  SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             Image.asset("images/3d-fluency-launch.png"),
-          const  SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.white,
+                foregroundColor: Colors.red,
+                minimumSize: const Size(300, 40)
+              ) ,
+              child: const Text('Login'),
+            )
           ],
         ),
       ),
