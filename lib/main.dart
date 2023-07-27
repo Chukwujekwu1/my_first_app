@@ -53,6 +53,7 @@ class LoginPage extends StatelessWidget {
             ),
           const  SizedBox(height: 20.0),
             Image.asset("images/3d-fluency-launch.png"),
+          const  SizedBox(height: 20.0),
           ],
         ),
       ),
