@@ -14,8 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.red,
-        useMaterial3: true,
+        primarySwatch: Colors.red, 
       ),
       home: const LoginPage(),
     );
@@ -51,7 +50,7 @@ class LoginPage extends StatelessWidget {
             ),
             const SizedBox(height: 20.0),
             Image.asset(
-              "images/rocketlaunch.png",
+              "images/3d-fluency-launch.png",
               scale: 1.2,
             ),
             const SizedBox(height: 20.0),
@@ -67,9 +66,7 @@ class LoginPage extends StatelessWidget {
                   backgroundColor: Colors.white,
                   foregroundColor: Colors.red,
                   minimumSize: const Size(300, 40),
-                  shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.zero,
-                  )),
+                  ),
               child: const Text('Login'),
             ),
             const SizedBox(height: 10.0),
@@ -79,9 +76,6 @@ class LoginPage extends StatelessWidget {
                   backgroundColor: Colors.redAccent,
                   foregroundColor: Colors.white,
                   minimumSize: const Size(300, 40),
-                  shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.zero,
-                  ),
                 ),
                 child: const Text("Register",)),
           ],
