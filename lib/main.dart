@@ -56,7 +56,7 @@ class LoginPage extends StatelessWidget {
             const SizedBox(height: 20.0),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(builder: (BuildContext context){
                   return const HomePage();
                 })
