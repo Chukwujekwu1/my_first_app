@@ -89,6 +89,39 @@ class HomePage extends StatelessWidget {
                     ))
               ],
             ),
+          ),
+       const  SizedBox(height: 30.00,),
+          Container(
+            width: double.infinity,
+              margin: const EdgeInsets.symmetric(
+              horizontal: 10.00,
+              vertical: 5.00,
+              ),
+              decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(15),
+              boxShadow: const [
+                BoxShadow(
+                  color: Colors.black12,
+                  spreadRadius: 2,
+                  blurRadius: 3,
+                  offset: Offset(2, 2),
+                ),
+              ],
+            ),
+            child: Column(
+              children: [
+                Image.asset(
+                  'images/rocketride.png',
+                  width: 300,
+                  height: 300,
+                ),
+                const ListTile(
+                  title: Text("How to make 10k/month"),
+                  trailing: Icon(Icons.arrow_forward_ios_rounded),
+                )
+              ],
+            ),
           )
         ],
       ),
